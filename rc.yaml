@@ -10,7 +10,7 @@ spec:
         name: abc
     spec:
       containers:
-        - name: mycon.
+        - name: mycont.
           image: httpd 
           ports:
             - containerPort: 80 
