@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp
   labels:
    color: black 
+  name: myapp 
 spec:
   replicas: 10 
   selector:
@@ -15,7 +15,7 @@ spec:
         color: black
     spec:
       containers:
-         name: mycont
-      - image: httpd 
+      - image: httpd
+        name: mycont
         ports:
         - containerPort: 80
