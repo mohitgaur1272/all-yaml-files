@@ -15,7 +15,7 @@ spec:
         color: black
     spec:
       containers:
-        name: mycont.
+      - name: mycont.
       - image: httpd 
         ports:
         - containerPort: 80
