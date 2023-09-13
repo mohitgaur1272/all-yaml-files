@@ -1,11 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: myapp
+  name: privatepod
   labels:
     name: black 
 spec:
-  imagepullserects: mgcred
+  imagepullserects:
+  - name: mgcred
   containers:
   - name: myapp
     image: mohitgaur1272/ap2
