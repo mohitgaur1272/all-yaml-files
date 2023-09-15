@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: samplepod 
   labels:
-    name: myapp
+    name: red 
 spec:
   containers:
   - name: meracon
