@@ -5,7 +5,7 @@ metadata:
   labels:
     name: black 
 spec:
-  imagePullsecrets:
+  imagePullSecrets:
   - name: mgcred
   containers:
   - name: myapp
