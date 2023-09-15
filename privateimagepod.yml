@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: privatepod
   labels:
-    name: black 
+    name: myapp
 spec:
   imagePullSecrets:
   - name: mgcred
