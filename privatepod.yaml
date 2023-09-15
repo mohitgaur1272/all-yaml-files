@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mohtipod
+  labels:
+    name: myapp
+spec:
+  imagePullSecrets:
+   - name: mgcred
+  containers:
+  - name: myapp
+    image: mohitgaur1272/ap2
+    ports:
+      - containerPort: 80
