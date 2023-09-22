@@ -16,4 +16,4 @@ spec:
   volumes:
     - name: new-pvc
       persistentVolumeClaim:
-      claimName: merafirstpvc
+        claimName: merafirstpvc
