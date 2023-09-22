@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: gaurpod 
+  name: gaurpod
   labels:
     name: myapp
 spec:
@@ -9,11 +9,11 @@ spec:
   - name: myapp
     image: httpd
     ports:
-      - containerPort: 80
-    volumeMount: 
-      - mountpath: /var/www/html/ 
-        name: new-pvc 
-  volumes:      
+     - containerPort: 80
+    volumeMounts:
+      - mountPath: /var/www/html/
+        name: new-pvc
+  volumes:
     - name: new-pvc
-      persistentvolumeclaim: 
-      claimName: merafirstpvc 
+      persistentVolumeClaim:
+      claimName: merafirstpvc
