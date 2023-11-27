@@ -3,9 +3,9 @@ kind: Deployment
 metadata:
   labels:
    color: black 
-  name: myapp 
+  name: myapp
 spec:
-  replicas: 10 
+  replicas: 5
   selector:
     matchLabels:
       color: black

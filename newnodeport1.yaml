@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: meriservice1
+spec:
+  type: NodePort
+  selector:
+    name: yellow
+  ports:
+  - port: 1177
+    targetPort: 80 
+    nodePort: 30004

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mohit2
+  labels:
+    name: yellow
+spec:
+  containers:
+  - name: myapp
+    image: aakashgaur57/contact
+    ports:
+      - containerPort: 80
